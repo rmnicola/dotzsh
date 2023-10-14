@@ -45,7 +45,7 @@ autoload -U zmv			# zmv lets you easily rename files
 autoload -U history-search-end 	# go straight to the end of history line
 
 # >> Zsh syntax highlighting by zsh-users (git submodule)
-# *** SEE END OF ZSHRC, IT IS SOURCE THERE ***
+# *** SEE END OF ZSHRC, IT IS SOURCED THERE ***
 
 # >> Zsh completions by zsh-users (git submodule)
 # Add every completion to fpath
@@ -57,16 +57,6 @@ autoload -U edit-command-line
 # >> Cursor_mode by Matthieu Cneude
 # https://github.com/Phantas0s/.dotfiles
 autoload -U cursor_mode; cursor_mode	# change cursor beam for insert/normal
-
-# >> Git it on by Peter Wildeford 
-# https://github.com/peterhurford/git-it-on.zsh
-autoload -U gitit 		# interact with remote repo on your browser
-
-# >> Gnome Backup Utilities by Me =)
-autoload -U gbkp; gbkp
-
-# >> Firefox Backup Utilities by Me =)
-autoload -U fbkp; fbkp
 
 # -------- End of Modules
 #
