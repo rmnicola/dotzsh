@@ -1,3 +1,9 @@
+# -------- Prompt
+#
+# Custom function to display the path
+PROMPT='%F{green}%n@%m%F{none}:%F{blue}%(5~|%-1~/…/%3~|%4~)%F{none}$ '
+
+
 # -------- Options 
 #
 # If you actually need any of them in non-interactive shells, 
