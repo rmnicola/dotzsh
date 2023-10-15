@@ -97,3 +97,11 @@ source $ZDOTDIR/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fnm
 export PATH="/home/inteli/.local/share/fnm:$PATH"
 eval "`fnm env`"
+
+# ros2
+if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
+    source "/opt/ros/humble/setup.zsh"
+    # argcomplete for ros2 & colcon
+    eval "$(register-python-argcomplete3 ros2)"
+    eval "$(register-python-argcomplete3 colcon)"
+fi
