@@ -1,0 +1,8 @@
+#compdef _usr_local_bin
+
+local -a commands
+commands=($(ls /usr/local/bin))
+
+_describe 'commands' commands
+
+compadd "$@" "${commands[@]}"
