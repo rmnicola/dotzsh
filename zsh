@@ -1,1 +1,0 @@
-/home/inteli/Dotfiles/zsh
