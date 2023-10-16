@@ -30,3 +30,4 @@ export CMAKE_C_COMPILER="gcc"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # -------- End of ZSH environment variables
+. "$HOME/.cargo/env"

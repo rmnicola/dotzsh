@@ -107,7 +107,3 @@ if command -v fnm &> /dev/null; then
   export PATH="/home/rmnicola/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
-
-# fnm
-export PATH="/home/rmnicola/.local/share/fnm:$PATH"
-eval "`fnm env`"
