@@ -101,3 +101,13 @@ if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
     eval "$(register-python-argcomplete3 ros2)"
     eval "$(register-python-argcomplete3 colcon)"
 fi
+
+# fnm
+if command -v fnm &> /dev/null; then
+  export PATH="/home/rmnicola/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+export PATH="/home/rmnicola/.local/share/fnm:$PATH"
+eval "`fnm env`"
