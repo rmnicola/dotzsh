@@ -29,5 +29,10 @@ export CMAKE_C_COMPILER="gcc"
 # >> Path
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+# >> Go env. variables
+export GOROOT="$HOME/go"
+export GOPATH="$HOME/go/packages"
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 # -------- End of ZSH environment variables
-. "$HOME/.cargo/env"
+
