@@ -102,6 +102,11 @@ if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
     eval "$(register-python-argcomplete3 colcon)"
 fi
 
+# rust
+if [[ -f "$HOME/.cargo/env" ]]; then
+  source "$HOME/.cargo/env"
+fi
+
 # fnm
 if command -v fnm &> /dev/null; then
   export PATH="/home/rmnicola/.local/share/fnm:$PATH"

@@ -34,5 +34,10 @@ export GOROOT="$HOME/go"
 export GOPATH="$HOME/go/packages"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# >> ROS env variables
+export ROS_DOMAIN_ID=122
+export TURTLEBOT3_MODEL=burger
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
 # -------- End of ZSH environment variables
 
