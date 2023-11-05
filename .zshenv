@@ -39,5 +39,8 @@ export ROS_DOMAIN_ID=122
 export TURTLEBOT3_MODEL=burger
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+# >> Starship config Folders
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
+
 # -------- End of ZSH environment variables
 

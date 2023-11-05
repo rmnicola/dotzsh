@@ -1,8 +1,5 @@
 # -------- Prompt
-#
-# Custom function to display the path
-PROMPT='%F{green}%n@%m%F{none}:%F{blue}%(5~|%-1~/…/%3~|%4~)%F{none}$ '
-
+eval "$(starship init zsh)"
 
 # -------- Options 
 #
@@ -60,10 +57,6 @@ fpath=($ZDOTDIR/modules/zsh-completions/src $fpath)
 # >> Edit command line from zshcontrib
 autoload -U edit-command-line
 
-# >> Cursor_mode by Matthieu Cneude
-# https://github.com/Phantas0s/.dotfiles
-autoload -U cursor_mode; cursor_mode	# change cursor beam for insert/normal
-
 # -------- End of Modules
 #
 # -------- Aliases
@@ -94,13 +87,13 @@ bindkey "^j" history-beginning-search-forward-end
 # >> Sourcing syntax-highlighting
 source $ZDOTDIR/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# ros2
-if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
-    source "/opt/ros/humble/setup.zsh"
-    # argcomplete for ros2 & colcon
-    eval "$(register-python-argcomplete3 ros2)"
-    eval "$(register-python-argcomplete3 colcon)"
-fi
+# ros2 takes too long to start. Uncomment these lines if you don´t mind
+# if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
+#     source "/opt/ros/humble/setup.zsh"
+#     # argcomplete for ros2 & colcon
+#     eval "$(register-python-argcomplete3 ros2)"
+#     eval "$(register-python-argcomplete3 colcon)"
+# fi
 
 # rust
 if [[ -f "$HOME/.cargo/env" ]]; then
@@ -112,3 +105,4 @@ if command -v fnm &> /dev/null; then
   export PATH="/home/rmnicola/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
