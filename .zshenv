@@ -31,8 +31,7 @@ export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # >> Go env. variables
 export GOROOT="$HOME/go"
-export GOPATH="$HOME/go/packages"
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 # >> ROS env variables
 export ROS_DOMAIN_ID=122
