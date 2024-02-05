@@ -29,17 +29,17 @@ export CMAKE_C_COMPILER="gcc"
 # >> Path
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-# >> Go env. variables
-export GOROOT="$HOME/go"
-export PATH=$PATH:$GOROOT/bin
-
 # >> ROS env variables
 export ROS_DOMAIN_ID=122
 export TURTLEBOT3_MODEL=burger
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+# >> Go env variables
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 # >> Starship config Folders
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 
 # -------- End of ZSH environment variables
-
