@@ -87,14 +87,6 @@ bindkey "^j" history-beginning-search-forward-end
 # >> Sourcing syntax-highlighting
 source $ZDOTDIR/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# ros2 takes too long to start. Uncomment these lines if you don´t mind
-# if [[ -f "/opt/ros/humble/setup.zsh" ]]; then
-#     source "/opt/ros/humble/setup.zsh"
-#     # argcomplete for ros2 & colcon
-#     eval "$(register-python-argcomplete3 ros2)"
-#     eval "$(register-python-argcomplete3 colcon)"
-# fi
-
 # rust
 if [[ -f "$HOME/.cargo/env" ]]; then
   source "$HOME/.cargo/env"
@@ -106,3 +98,4 @@ if command -v fnm &> /dev/null; then
   eval "`fnm env`"
 fi
 
+eval "$(zoxide init --cmd cd zsh)"
